@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Document</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/main.css">
+   <title>title</title>
 </head>
 <body>
-    <script src="./js/main.js"></script>
+   <main>
+      <section class="hero">
+         <div class="container hero__container">
+            <h1 class="hero__heading">Kim birinchi borish ga!</h1>
+            <form class="hero__form" action="https://echo.htmlacademy.ru/" method="POST">
+               <label class="hero__form-label" for="">Masofa</label>
+               <input class="hero__form-input" type="text" placeholder="masofani kiriting!" required>
+               <button class="hero__btn" type="submit">hisobla</button>
+            </form>
+            <ul class="hero__list">
+               <li class="hero__item">
+                  <img class="hero__item-img" src="./images/walking.jpg" width="100px" height="100px" alt="logo">
+                  <p class="hero__item-text">Walk</p>
+                  <h3 class="hero__item-walk">0</h3>
+               </li>
+               <li class="hero__item">
+                  <img class="hero__item-img" src="./images/bike.jpg" width="100px" height="100px" alt="logo">
+                  <p class="hero__item-text">Bike</p>
+                  <h3 class="hero__item-bike">0</h3>
+               </li>
+               <li class="hero__item">
+                  <img class="hero__item-img" src="./images/car.jfif" width="100px" height="100px" alt="logo">
+                  <p class="hero__item-text">Car</p>
+                  <h3 class="hero__item-car">0</h3>
+               </li>
+               <li class="hero__item">
+                  <img class="hero__item-img" src="./images/plane.png" width="100px" height="100px" alt="logo">
+                  <p class="hero__item-text">Plane</p>
+                  <h3 class="hero__item-plane">0</h3>
+               </li>
+            </ul>
+         </div>
+      </section>
+   </main>
+   <script src="./js/main.js"></script>
 </body>
 </html>

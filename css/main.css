@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero {
+    padding-top: 100px;
+}
+.hero__container {
+    padding: 80px 0;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.hero__heading {
+    margin-bottom: 15px;
+}
+.hero__form {
+    margin-bottom: 20px;
+}
+.hero__form-label {
+}
+.hero__form-input {
+}
+.hero__btn {
+}
+
+
+.hero__list {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.hero__item {
+    list-style-type: none;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.hero__item-img {
+}
+.hero__item-text {
+}
+.hero__item-heading {
+}
+
