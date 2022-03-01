@@ -17,9 +17,14 @@ elform.addEventListener
     evt.preventDefault();
     console.log(elinput.value);
 
-    elwalk.innerHTML = Math.floor(elinput.value / 3.6) + "soat";
-    elbike.innerHTML = Math.floor(elinput.value / 20.1) + "soat";
-    elcar.innerHTML = Math.floor(elinput.value / 70) + "soat";
-    elplane.innerHTML = Math.floor(elinput.value / 800) + "soat";
+    var resultwalk = Math.floor(elinput.value / 3.6);
+    var resultbike = Math.floor(elinput.value / 20.1);
+    var resultcar = Math.floor(elinput.value / 70);
+    var resultplane = Math.floor(elinput.value / 800);
+
+    elwalk.innerHTML = resultwalk + "soat " + Math.floor(((elinput.value / 3.6) - resultwalk) * 60) + "minut";
+    elbike.innerHTML = resultbike + "soat " + Math.floor(((elinput.value / 20.1) - resultbike) * 60) + "minut";
+    elcar.innerHTML = resultcar + "soat " + Math.floor(((elinput.value / 70) - resultcar) * 60) + "minut";
+    elplane.innerHTML = resultplane + "soat " + Math.floor(((elinput.value / 800) - resultplane) * 60) + "minut";
     }
     )
